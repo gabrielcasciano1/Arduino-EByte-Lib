@@ -1,18 +1,26 @@
+#if UNO
+
+#include "UNO-EBYTE-E22.h"
+#include "UNO-EBYTE-E52.h"
+
+#elif ESP32
+
+#include "ESP32-EBYTE-E22.h"
+#include "ESP32-EBYTE-E52.h"
+
+#elif ESP8266
+
+#include "ESP8266-EBYTE-E22.h"
+#include "ESP8266-EBYTE-E52.h"
+
+#endif
+
 #include <Arduino.h>
 
-// put function declarations here:
-int myFunction(int, int);
+void setup(){
 
-void setup() {
-  // put your setup code here, to run once:
-  int result = myFunction(2, 3);
 }
 
-void loop() {
-  // put your main code here, to run repeatedly:
-}
-
-// put function definitions here:
-int myFunction(int x, int y) {
-  return x + y;
+void loop(){
+  
 }
